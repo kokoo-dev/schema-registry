@@ -1,0 +1,29 @@
+{
+  "doc": "회원 정보 스키마",
+  "fields": [
+    {
+      "doc": "회원 이름",
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "doc": "회원 나이",
+      "name": "age",
+      "type": "int"
+    },
+    {
+      "doc": "생성 일시",
+      "name": "createdAt",
+      "type": [
+        "null",
+        {
+          "logicalType": "local-timestamp-millis",
+          "type": "long"
+        }
+      ]
+    }
+  ],
+  "name": "Member",
+  "namespace": "com.kokoo",
+  "type": "record"
+}
